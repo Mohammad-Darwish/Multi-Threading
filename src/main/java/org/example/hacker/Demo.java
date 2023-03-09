@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Random;
 
 public class Demo {
-    public static final int MAX_PASSWORD = 1_000_000;
+    public static final int MAX_PASSWORD = 1_0_000;
     public static void main(String[] args) {
         Random random = new Random();
         Vault vault = new Vault(random.nextInt(MAX_PASSWORD));
@@ -94,6 +94,7 @@ public class Demo {
                 System.out.println(i);
             }
             System.out.println("Game over Hacker");
+            System.exit(0);
         }
     }
 }
